@@ -3,8 +3,33 @@
 //import fonts
 @import url(https://fonts.googleapis.com/css?family=Lato|Lobster+Two|Coda|Economica:400,700);
 
+
+
+/*General Settings  Border Box*/
+
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+
+
+/* Reset Import */
+
+@import "reset";
+
 /*Compass Imports */
 @import "compass";
 @import "compass/utilities";
 @import "compass/css3/transform";
 @import "compass/css3/box-shadow"; 
+
+@import "general";
+
+@import "variables.scss";
+@import "slider.scss";
