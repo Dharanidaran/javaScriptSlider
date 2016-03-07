@@ -1,2 +1,25 @@
 // mixin.scss
 
+// _mixins.scss
+
+
+@mixin centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin centerX {
+  position: absolute;
+  top:0%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+@mixin centerY {
+  position: absolute;
+  top:50%;
+  left: 0%;
+  transform: translate(0%, -50%);
+}

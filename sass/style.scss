@@ -27,9 +27,38 @@
 @import "compass";
 @import "compass/utilities";
 @import "compass/css3/transform";
+@import "compass/css3/transition";
 @import "compass/css3/box-shadow"; 
+@import "breakpoint";
+@import "susy";
+@import 'susy';
+	$susy: (
+	  columns: 12,
+	  gutters: .25,
+
+	);
+
+	$slider-desktop:(
+		container-position : center,
+		container:1200,
+		column-width:1200,
+		columns: 12,
+		gutters: 0.1,
+		math:fluid,
+	);
+
+
+	$slider-smallScreen:(
+		container-position : center,
+		container:968,
+		column-width:968,
+		columns: 12,
+		gutters: 0.1,
+		math:fluid,
+
+	);
 
 @import "general";
-
-@import "variables.scss";
-@import "slider.scss";
+@import "variables";
+@import "mixin";
+@import "slider";
